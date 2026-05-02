@@ -1,0 +1,5 @@
+_id,specialty_code,specialty_name,fields[0].field_name,fields[1].field_name,fields[2].field_name,fields[0].label,fields[1].label,fields[2].label,fields[0].type,fields[1].type,fields[2].type,fields[0].required,fields[1].required,fields[2].required
+69d918d29f6d252e6b7af413,CARD,Cardiology,nhip_tim,huyet_ap,ecg_result,Nhịp tim,Huyết áp,ECG Result,number,string,string,true,true,false
+69d918d29f6d252e6b7af414,DENT,Dental,rang_so,loai_can_thiep,muc_do_sau_rang,Răng số,Loại can thiệp,Mức độ sâu răng,string,string,string,true,true,false
+69d918d29f6d252e6b7af415,GEN,General Medicine,nhiet_do,can_nang,chieu_cao,Nhiệt độ,Cân nặng,Chiều cao,number,number,number,false,false,false
+69d918d29f6d252e6b7af416,RESP,Respiratory,spo2,nhip_tho,ket_qua_xquang,SpO2,Nhịp thở,Kết quả X-quang,number,number,string,false,false,false
