@@ -1,5 +1,0 @@
-_id,doctor_code,full_name,specialty,clinic_code,phone,status
-69d918ba9f6d252e6b7af40c,DR001,Dr. Tien,Cardiology,CL002,0901000001,active
-69d918ba9f6d252e6b7af40d,DR002,Dr. Tran Thu Ha,Dental,CL003,0901000002,active
-69d918ba9f6d252e6b7af40e,DR003,Dr. Le Quang Huy,General Medicine,CL001,0901000003,active
-69d918ba9f6d252e6b7af40f,DR004,Dr. Pham Bao Chau,Respiratory,CL001,0901000004,active

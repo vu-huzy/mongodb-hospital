@@ -23,10 +23,10 @@ export default function SmartMedicalForm() {
   });
 
   useEffect(() => {
-    api.get('/patients').then(r => setPatients(r.data)).catch(() => {});
-    api.get('/specialty-templates').then(r => setTemplates(r.data)).catch(() => {});
-    api.get('/doctors').then(r => setDoctors(r.data)).catch(() => {});
-    api.get('/clinics').then(r => setClinics(r.data)).catch(() => {});
+    api.get('/patients').then(r => setPatients(r.data)).catch(() => { });
+    api.get('/specialty-templates').then(r => setTemplates(r.data)).catch(() => { });
+    api.get('/doctors').then(r => setDoctors(r.data)).catch(() => { });
+    api.get('/clinics').then(r => setClinics(r.data)).catch(() => { });
   }, []);
 
   const selectedTemplate = templates.find(t => t.specialty_code === form.specialty_code);
@@ -169,7 +169,7 @@ export default function SmartMedicalForm() {
             <div className="form-row">
               <div className="form-group">
                 <label className="form-label">Patient *</label>
-                <select className="form-control" value={form.patient_id} onChange={e => setForm({...form, patient_id: e.target.value})}>
+                <select className="form-control" value={form.patient_id} onChange={e => setForm({ ...form, patient_id: e.target.value })}>
                   <option value="">-- Select Patient --</option>
                   {patients.map(p => <option key={p._id} value={p._id}>{p.patient_code} - {p.full_name}</option>)}
                 </select>
@@ -185,14 +185,14 @@ export default function SmartMedicalForm() {
             <div className="form-row">
               <div className="form-group">
                 <label className="form-label">Doctor (Reference)</label>
-                <select className="form-control" value={form.doctor_code} onChange={e => setForm({...form, doctor_code: e.target.value})}>
+                <select className="form-control" value={form.doctor_code} onChange={e => setForm({ ...form, doctor_code: e.target.value })}>
                   <option value="">-- Select Doctor --</option>
                   {doctors.map(d => <option key={d.doctor_code} value={d.doctor_code}>{d.full_name} ({d.specialty})</option>)}
                 </select>
               </div>
               <div className="form-group">
                 <label className="form-label">Clinic (Reference)</label>
-                <select className="form-control" value={form.clinic_code} onChange={e => setForm({...form, clinic_code: e.target.value})}>
+                <select className="form-control" value={form.clinic_code} onChange={e => setForm({ ...form, clinic_code: e.target.value })}>
                   <option value="">-- Select Clinic --</option>
                   {clinics.map(c => <option key={c.clinic_code} value={c.clinic_code}>{c.clinic_name}</option>)}
                 </select>
@@ -200,16 +200,16 @@ export default function SmartMedicalForm() {
             </div>
             <div className="form-group">
               <label className="form-label">Triệu chứng</label>
-              <textarea className="form-control" rows="2" value={form.trieu_chung} onChange={e => setForm({...form, trieu_chung: e.target.value})} placeholder="Mô tả triệu chứng..." />
+              <textarea className="form-control" rows="2" value={form.trieu_chung} onChange={e => setForm({ ...form, trieu_chung: e.target.value })} placeholder="Mô tả triệu chứng..." />
             </div>
             <div className="form-row">
               <div className="form-group">
                 <label className="form-label">Chẩn đoán</label>
-                <input className="form-control" value={form.chan_doan} onChange={e => setForm({...form, chan_doan: e.target.value})} placeholder="Chẩn đoán..." />
+                <input className="form-control" value={form.chan_doan} onChange={e => setForm({ ...form, chan_doan: e.target.value })} placeholder="Chẩn đoán..." />
               </div>
               <div className="form-group">
                 <label className="form-label">Ghi chú bác sĩ</label>
-                <input className="form-control" value={form.ghi_chu_bac_si} onChange={e => setForm({...form, ghi_chu_bac_si: e.target.value})} placeholder="Ghi chú..." />
+                <input className="form-control" value={form.ghi_chu_bac_si} onChange={e => setForm({ ...form, ghi_chu_bac_si: e.target.value })} placeholder="Ghi chú..." />
               </div>
             </div>
           </div>

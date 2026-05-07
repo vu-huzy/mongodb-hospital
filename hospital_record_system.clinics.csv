@@ -1,4 +1,0 @@
-_id,clinic_code,clinic_name,address,phone,status
-69d918c69f6d252e6b7af410,CL001,Central General Clinic,"123 Nguyen Trai, Ha Noi",0241111111,active
-69d918c69f6d252e6b7af411,CL002,Heart Care Center,"45 Tran Phu, Ha Noi",0242222222,active
-69d918c69f6d252e6b7af412,CL003,Dental Health Clinic,"78 Le Loi, Ha Noi",0243333333,active
